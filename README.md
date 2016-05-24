@@ -5,7 +5,7 @@ __`on-http` is the HTTP server for RackHD__
 _Copyright 2015, EMC, Inc._
 
 ## Installation
-
+ 
     rm -rf node_modules
     npm install
     npm run apidoc
