@@ -1,4 +1,4 @@
-// Copyright 2015, EMC, Inc.
+// Copyright 2014, EMC, Inc.
 
 "use strict";
 
