@@ -1,0 +1,38 @@
+From 3c73b152f5b36ccb07e3ca9ac9a1ef13589c95ad Mon Sep 17 00:00:00 2001
+From: onrack <onrack@ORA.hwimo.lab.emc.com>
+Date: Mon, 20 Jun 2016 00:42:09 +0000
+Subject: [PATCH] PengTian: judge the status of processor at list system
+ processors (redfish api)
+
+---
+ package.json | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/package.json b/package.json
+index 0675319..dfb7f53 100644
+--- a/package.json
++++ b/package.json
+@@ -5,7 +5,7 @@
+   "main": "index.js",
+   "scripts": {
+     "doc": "./node_modules/.bin/jsdoc lib/api/1.1/northbound -r -d docs",
+-    "test": "./node_modules/.bin/mocha $(find spec -name '*-spec.js') -R spec --require spec/helper.js",
++    "test": "./node_modules/.bin/mocha $(find spec -name '*-spec.js'|sort) -R spec --require spec/helper.js",
+     "install": "./install-web-ui.sh && ./install-swagger-ui.sh",
+     "apidoc": "./node_modules/.bin/apidoc -i lib/api/1.1/northbound -f '.*\\.js$' -o build/apidoc"
+   },
+@@ -33,9 +33,9 @@
+     "mongodb": "^1.4.28",
+     "multer": "~1.1.0",
+     "node-ssdp": "~2.7.0",
+-    "on-core": "git+https://github.com/RackHD/on-core.git",
++    "on-core": "git+https://github.com/lanchongyizu/RackHD_CI_on_core.git",
+     "on-finished": "^2.2.0",
+-    "on-tasks": "git+https://github.com/RackHD/on-tasks.git",
++    "on-tasks": "git+https://github.com/lanchongyizu/RackHD_CI_on_tasks.git",
+     "os-tmpdir": "~1.0.1",
+     "passport": "^0.3.2",
+     "passport-anonymous": "~1.0.1",
+-- 
+1.9.1
+
